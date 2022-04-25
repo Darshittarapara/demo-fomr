@@ -1,0 +1,119 @@
+<!-- {% import "bootstrap/wtf.html" as wtf %}
+{% extends "bootstrap/base.html" %}
+{% block title %}
+Sign Up
+{% endblock %}
+{% block styles %}
+{{super()}}
+<style xmlns="http://www.w3.org/1999/html"> -->
+  <body>
+<style>
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Heebo', sans-serif;
+    box-sizing: border-box;
+    font-style: Medium 500;
+}
+
+body {
+   
+    background: rgb(214, 204, 204);
+height: 100vh;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.container {
+    width: 500px;
+    box-sizing: 0px 0px 20px 20px rgba(0,0,0,0);;
+    height: 700px;
+    
+}
+.container .form-container h1 {
+    margin-left: 14px;
+}
+.container .form-container form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  
+}
+.container .form-container form label{
+    font-weight: bold;
+    font-size: 18px;
+}
+.container .form-container form input{
+    width: 300px;
+    margin: 10px 0px;
+    border: 1px solid silver;
+    padding: 15px 0px;
+}
+.container .form-container form #checked{
+    width: 30px;
+}
+.container .form-container form input:focus{
+    border: 1px solid rgb(18, 99, 165);;
+    box-shadow: 0px 0px 10px silver;
+}
+.container .form-container form input[type="submit"]{
+    background: rgb(18, 99, 165);
+    color: white;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 10px;
+}
+.container .form-container form select{
+    padding: 4px;
+}
+@media screen and (max-device-width:450px) {
+    .container {
+          width: 600px;
+          
+    }
+    .container .form-container{
+        width: 100%;
+    }
+}
+</style>    
+  <div class="container">
+    <div class="form-container">
+        <h1>Sign up</h1>
+        
+        <form action="">
+            <label for="Name">Username<br>
+                <input type="text" id="Name" required>
+            </label>
+           
+           <label for="psw">Password<br>
+              <input id="psw" type="password" name="pass" required>
+           </label>
+           <label for="cof-psw">Cof-Password<br>
+            <input id="cof-psw" type="password" name="cof-pass" required>
+         </label>
+         <label for="email">Email<br>
+             <input type="email" id="email" name="useremail" required>
+         </label>
+         <label for="dep"><br>
+            Choose a Department name:<br>
+            <select name="Department" id="dep">
+                <option name="depart">Project Manager</option>
+                <option name="depart">Developer</option>
+                <option name="depart">Python</option>
+                <option name="depart">Java</option>
+                <option name="depart">Node Js</option>
+                <option name="depart">Flutter</option>
+                <option name="depart">Android</option>
+            </select>
+         </label>
+      
+            <input type="submit" value="Sign Up">
+        </form> 
+    </div>
+</div>
+<script src="/index.js"></script>
+<body>
+  
+</body>
